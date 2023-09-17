@@ -634,6 +634,18 @@ video {
   gap: 1.25rem;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -838,5 +850,9 @@ video {
 
   .sm\:w-2\/4 {
     width: 50%;
+  }
+
+  .sm\:gap-4 {
+    gap: 1rem;
   }
 }
