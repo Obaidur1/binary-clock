@@ -848,11 +848,25 @@ video {
     margin: auto;
   }
 
+  .sm\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .sm\:w-2\/4 {
     width: 50%;
   }
 
   .sm\:gap-4 {
     gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 }
