@@ -11,7 +11,7 @@ function update() {
   const seconds = currentUTC.getUTCSeconds();
   const milliseconds = currentUTC.getMilliseconds();
 
-  hour.innerHTML = `Hour ${hours}`;
+  hour.innerHTML = `Hour ${hours<13 ? hours : hours % 12 }`;
   minute.innerHTML = `Minute ${minutes}`;
   second.innerHTML = `Second ${seconds}`;
   //   ${seconds.toString(2).padStart(6, "0")}
