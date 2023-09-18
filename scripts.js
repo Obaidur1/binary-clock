@@ -6,11 +6,11 @@ function update() {
   const currentUTC = new Date();
   currentUTC.setUTCHours(currentUTC.getUTCHours() + 6);
 
-  const hours = currentUTC.getUTCHours();
+  const hours24 = currentUTC.getUTCHours();
   const minutes = currentUTC.getUTCMinutes();
   const seconds = currentUTC.getUTCSeconds();
   const milliseconds = currentUTC.getMilliseconds();
-  hours = hours < 13 ? hours : hours % 12
+  const hours = hours24 < 13 ? hours24 : hours24 % 12
   hour.innerHTML = `Hour ${hours}`;
   minute.innerHTML = `Minute ${minutes}`;
   second.innerHTML = `Second ${seconds}`;
